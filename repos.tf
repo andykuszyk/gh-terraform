@@ -33,3 +33,18 @@ resource "github_repository" "dotfiles" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "cronical" {
+  name                 = "cronical"
+  description          = ""
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = true
+  visibility           = "public"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
