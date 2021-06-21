@@ -36,12 +36,12 @@ resource "github_repository" "dotfiles" {
 
 resource "github_repository" "cronical" {
   name                 = "cronical"
-  description          = ""
+  description          = "A WebCal filtering application"
+  homepage_url         = "https://www.cronical.net"
   has_downloads        = true
   has_issues           = true
   has_wiki             = true
   has_projects         = true
-  homepage_url         = ""
   vulnerability_alerts = true
   visibility           = "public"
   lifecycle {
