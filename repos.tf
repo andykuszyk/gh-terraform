@@ -48,3 +48,18 @@ resource "github_repository" "cronical" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "do-docker" {
+  name                 = "do-docker"
+  description          = "Docker compose files for running workloads on Digital Ocean"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = false
+  visibility           = "public"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
