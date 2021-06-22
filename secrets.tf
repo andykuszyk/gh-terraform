@@ -78,3 +78,9 @@ resource "github_actions_secret" "do_docker_id_rsa" {
   secret_name     = "ID_RSA"
   plaintext_value = var.id_rsa
 }
+
+resource "github_actions_secret" "do_docker_known_hosts" {
+  repository      = "do-docker"
+  secret_name     = "KNOWN_HOSTS"
+  plaintext_value = var.known_hosts
+}

@@ -10,3 +10,4 @@ variable "mariadb_root_password" {}
 variable "douser" {}
 variable "doip" {}
 variable "id_rsa" {}
+variable "known_hosts" {}
