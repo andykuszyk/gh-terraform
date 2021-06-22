@@ -1,2 +1,12 @@
 variable "docker_username" {}
 variable "docker_password" {}
+variable "gitlab_token" {}
+variable "opencart_username" {}
+variable "opencart_password" {}
+variable "opencart_email" {}
+variable "opencart_database_user" {}
+variable "opencart_database_password" {}
+variable "mariadb_root_password" {}
+variable "douser" {}
+variable "doip" {}
+variable "id_rsa" {}
