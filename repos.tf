@@ -74,7 +74,23 @@ resource "github_repository" "writing" {
   homepage_url         = ""
   vulnerability_alerts = false
   visibility           = "private"
-  topics = ["writing"]
+  topics               = ["writing"]
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
+
+resource "github_repository" "structure-of-ice-giants" {
+  name                 = "structure-of-ice-giants"
+  description          = "An attempt to reproduce modelled results of the internal structures of Uranus and Neptune"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = false
+  visibility           = "private"
+  topics               = ["science"]
   lifecycle {
     ignore_changes = [etag]
   }
