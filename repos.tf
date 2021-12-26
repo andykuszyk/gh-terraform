@@ -95,3 +95,19 @@ resource "github_repository" "structure-of-ice-giants" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "notes" {
+  name                 = "notes"
+  description          = "Thoughts, ideas, and notes"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = false
+  visibility           = "private"
+  topics               = []
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
