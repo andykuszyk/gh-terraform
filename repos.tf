@@ -105,12 +105,7 @@ resource "github_repository" "akuszyk_com" {
   has_projects         = true
   homepage_url         = "https://akuszyk.com"
   vulnerability_alerts = true
-  pages {
-    source {
-      branch = "master"
-      path   = "/"
-    }
-  }
+
   visibility = "public"
   lifecycle {
     ignore_changes = [etag]
