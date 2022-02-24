@@ -95,3 +95,24 @@ resource "github_repository" "notes" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "akuszyk_com" {
+  name                 = "akuszyk.com"
+  description          = "The static files and generator for my fiction site, akuszyk.com"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = "https://akuszyk.com"
+  vulnerability_alerts = true
+  pages {
+    source {
+      branch = "master"
+      path   = "/"
+    }
+  }
+  visibility = "public"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
