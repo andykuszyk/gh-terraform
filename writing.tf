@@ -26,6 +26,7 @@ locals {
     "the-kingdom-of-tharg",
     "another-man",
     "iatkh",
+    "from-me-to-you",
   ]
 }
 
