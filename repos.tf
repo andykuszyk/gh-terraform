@@ -111,3 +111,19 @@ resource "github_repository" "akuszyk_com" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "dnd-notes" {
+  name                 = "dnd-notes"
+  description          = "Notes and research for being a dungeon master"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = false
+  visibility           = "private"
+  topics               = []
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
