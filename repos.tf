@@ -127,3 +127,17 @@ resource "github_repository" "dnd-notes" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "markasten" {
+  name                 = "markasten"
+  description          = "A Zettelkasten toolkit for markdown files"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  vulnerability_alerts = true
+  visibility           = "public"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
