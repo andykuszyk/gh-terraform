@@ -2,6 +2,7 @@ locals {
   docker_secret_repos = [
     "cronical",
     "do-docker",
+    "markasten",
   ]
 }
 
