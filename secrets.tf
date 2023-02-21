@@ -85,3 +85,9 @@ resource "github_actions_secret" "do_docker_known_hosts" {
   secret_name     = "KNOWN_HOSTS"
   plaintext_value = var.known_hosts
 }
+
+resource "github_actions_secret" "do_docker_grafana_api_key" {
+  repository      = "do-docker"
+  secret_name     = "GRAFANA_API_KEY"
+  plaintext_value = var.grafana_api_key
+}
