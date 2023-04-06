@@ -91,3 +91,9 @@ resource "github_actions_secret" "do_docker_grafana_api_key" {
   secret_name     = "GRAFANA_API_KEY"
   plaintext_value = var.grafana_api_key
 }
+
+resource "github_actions_secret" "markasten_snyk_token" {
+  repository      = "markasten"
+  secret_name     = "SNYK_TOKEN"
+  plaintext_value = var.snyk_token
+}

@@ -12,3 +12,4 @@ variable "doip" {}
 variable "id_rsa" {}
 variable "known_hosts" {}
 variable "grafana_api_key" {}
+variable "snyk_token" {}
