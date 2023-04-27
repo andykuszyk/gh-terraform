@@ -148,3 +148,17 @@ resource "github_repository" "markasten" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "efg-users-api" {
+  name                 = "efg-users-api"
+  description          = "My take-home test submission for the EFG users API"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  vulnerability_alerts = true
+  visibility           = "private"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
