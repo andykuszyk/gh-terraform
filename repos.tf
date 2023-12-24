@@ -162,3 +162,18 @@ resource "github_repository" "efg-users-api" {
     ignore_changes = [etag]
   }
 }
+
+resource "github_repository" "noman.el" {
+  name                 = "noman.el"
+  description          = "An Emacs package for browsing CLI command docs without man pages"
+  has_downloads        = true
+  has_issues           = true
+  has_wiki             = true
+  has_projects         = true
+  homepage_url         = ""
+  vulnerability_alerts = true
+  visibility           = "public"
+  lifecycle {
+    ignore_changes = [etag]
+  }
+}
