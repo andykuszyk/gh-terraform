@@ -163,7 +163,7 @@ resource "github_repository" "efg-users-api" {
   }
 }
 
-resource "github_repository" "noman.el" {
+resource "github_repository" "noman-el" {
   name                 = "noman.el"
   description          = "An Emacs package for browsing CLI command docs without man pages"
   has_downloads        = true
